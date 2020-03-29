@@ -20,6 +20,7 @@ class CreateGCPromoCodesTable extends Migration
             $table->boolean('percentage');
             $table->float('value', 8, 2);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -13,6 +13,9 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware('api')->group(function () {
+    Route::get('/meu-perfil', 'API\GCCostumerController@getProfile');
+    Route::post('/registrar', 'API\GCCostumerController@register');
+    Route::post('/login', 'API\GCCostumerController@login');
+    Route::post('/editar-perfil', 'API\GCCostumerController@updateProfile');
 });

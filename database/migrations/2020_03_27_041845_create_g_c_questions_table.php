@@ -18,6 +18,7 @@ class CreateGCQuestionsTable extends Migration
             $table->unsignedBigInteger('question_type_id');
             $table->unsignedBigInteger('quiz_id');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

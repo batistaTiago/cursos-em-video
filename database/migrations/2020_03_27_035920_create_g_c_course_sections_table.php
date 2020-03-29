@@ -20,6 +20,7 @@ class CreateGCCourseSectionsTable extends Migration
             $table->unsignedBigInteger('course_id');
 
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

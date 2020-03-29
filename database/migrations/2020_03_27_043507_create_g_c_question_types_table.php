@@ -16,6 +16,7 @@ class CreateGCQuestionTypesTable extends Migration
         Schema::create('question_types', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

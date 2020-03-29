@@ -17,6 +17,7 @@ class CreateGCQuizzesTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('course_section_id');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

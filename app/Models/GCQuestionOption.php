@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class GCQuestionOption extends Model
+class GCQuestionOption extends GCBaseModel
 {
     //
 }

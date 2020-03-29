@@ -24,6 +24,7 @@ class CreateGCCoursesTable extends Migration
             $table->unsignedBigInteger('difficulty_level_id');
             
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

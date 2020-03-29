@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class GCCource extends Model
+class GCCource extends GCBaseModel
 {
     //
 }

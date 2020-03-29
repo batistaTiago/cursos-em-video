@@ -16,10 +16,12 @@ class CreateGCCostumersTable extends Migration
         Schema::create('costumers', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->string('email');
+            $table->string('email')->unique();
             $table->string('password');
-            $table->string('document_code');
+            $table->string('document_code')->unique();
+            $table->string('phone_number')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

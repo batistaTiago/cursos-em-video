@@ -24,6 +24,7 @@ class CreateGCOrdersTable extends Migration
             $table->unsignedBigInteger('payment_id');
             
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

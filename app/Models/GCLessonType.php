@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class GCLessonType extends Model
+class GCLessonType extends GCBaseModel
 {
     //
 }

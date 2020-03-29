@@ -19,6 +19,7 @@ class CreateGCQuestionOptionsTable extends Migration
             $table->unsignedBigInteger('question_id');
 
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

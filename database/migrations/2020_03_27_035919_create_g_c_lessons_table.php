@@ -26,6 +26,7 @@ class CreateGCLessonsTable extends Migration
             $table->string('video_url')->nullabe();
 
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

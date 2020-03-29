@@ -21,6 +21,7 @@ class CreateGCOrderCoursesTable extends Migration
             $table->unsignedBigInteger('costumer_id');
 
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

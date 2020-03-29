@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class GCDifficultyLevel extends Model
+class GCDifficultyLevel extends GCBaseModel
 {
     //
 }
